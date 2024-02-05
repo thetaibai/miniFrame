@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "OS.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -87,7 +87,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -95,7 +95,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  OS();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -138,7 +138,18 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* Prevent unused argument(s) compilation warning */
+	if(TIM2 == htim->Instance)
+	{
+		LittleHeartFunc();
+	}
 
+  /* NOTE : This function should not be modified, when the callback is needed,
+            the HAL_TIM_PeriodElapsedCallback could be implemented in the user file
+   */
+}
 /* USER CODE END 4 */
 
 /**

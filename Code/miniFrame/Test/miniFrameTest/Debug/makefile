@@ -9,6 +9,10 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Source/STD/Startup/subdir.mk
+-include Source/STD/Src/subdir.mk
+-include Source/BSW/Sys/LittleOs/Core/subdir.mk
+-include Source/BSW/Sys/LittleOs/Config/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include objects.mk
 

@@ -22,7 +22,10 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Core/Src \
 Drivers/STM32F1xx_HAL_Driver/Src \
+Source/BSW/Sys/LittleOs/Config \
+Source/BSW/Sys/LittleOs/Core \
 Source/STD/Src \
 Source/STD/Startup \
 
