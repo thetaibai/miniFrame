@@ -14,7 +14,6 @@ RM := rm -rf
 -include Source/BSW/Sys/LittleOs/Core/subdir.mk
 -include Source/BSW/Sys/LittleOs/Config/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
--include Core/Src/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

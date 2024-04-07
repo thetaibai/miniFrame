@@ -1,0 +1,5 @@
+Wdg.c:31:6:Wdg_Task	1
+Wdg.c:38:13:Wdg_FeedDog_Task	2
+Wdg.c:53:13:Wdg_Os_Check_Task	4
+Wdg.c:84:6:Wdg_Reset	1
+Wdg.c:99:6:Wdg_SelfCheck	5

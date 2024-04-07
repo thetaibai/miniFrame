@@ -1,0 +1,5 @@
+../Source/BSW/Sys/Wdg/Core/Wdg.c:31:6:Wdg_Task	8	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:38:13:Wdg_FeedDog_Task	8	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:53:13:Wdg_Os_Check_Task	8	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:84:6:Wdg_Reset	8	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:99:6:Wdg_SelfCheck	24	static
