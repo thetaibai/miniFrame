@@ -1,5 +1,6 @@
 Source/BSW/Sys/Wdg/Core/Wdg.o: ../Source/BSW/Sys/Wdg/Core/Wdg.c \
  ../Source/BSW/Sys/Wdg/Core/Wdg.h \
+ C:/Users/a9077/Desktop/learn/miniFrame/miniFrame/Code/miniFrame/Test/miniFrameTest1/Source/BSW/Sys/Wdg/Config/Wdg_CfgIf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -24,8 +25,11 @@ Source/BSW/Sys/Wdg/Core/Wdg.o: ../Source/BSW/Sys/Wdg/Core/Wdg.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Core/Inc/iwdg.h ../Core/Inc/main.h \
+ C:/Users/a9077/Desktop/learn/miniFrame/miniFrame/Code/miniFrame/Test/miniFrameTest1/Source/BSW/Sys/Wdg/Config/Wdg_Cfg.h
 ../Source/BSW/Sys/Wdg/Core/Wdg.h:
+C:/Users/a9077/Desktop/learn/miniFrame/miniFrame/Code/miniFrame/Test/miniFrameTest1/Source/BSW/Sys/Wdg/Config/Wdg_CfgIf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
@@ -51,3 +55,6 @@ Source/BSW/Sys/Wdg/Core/Wdg.o: ../Source/BSW/Sys/Wdg/Core/Wdg.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+../Core/Inc/iwdg.h:
+../Core/Inc/main.h:
+C:/Users/a9077/Desktop/learn/miniFrame/miniFrame/Code/miniFrame/Test/miniFrameTest1/Source/BSW/Sys/Wdg/Config/Wdg_Cfg.h:

@@ -10,6 +10,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include Source/BSW/Sys/Wdg/Core/subdir.mk
+-include Source/BSW/Sys/Wdg/Config/subdir.mk
 -include Source/BSW/Sys/LittleOs/Core/subdir.mk
 -include Source/BSW/Sys/LittleOs/Config/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
@@ -55,6 +56,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 miniFrameTest1.list \
 
+OBJCOPY_HEX += \
+miniFrameTest1.hex \
+
 
 # All Target
 all: main-build
@@ -78,12 +82,17 @@ miniFrameTest1.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+miniFrameTest1.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "miniFrameTest1.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) default.size.stdout miniFrameTest1.elf miniFrameTest1.list miniFrameTest1.map
+	-$(RM) default.size.stdout miniFrameTest1.elf miniFrameTest1.hex miniFrameTest1.list miniFrameTest1.map
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

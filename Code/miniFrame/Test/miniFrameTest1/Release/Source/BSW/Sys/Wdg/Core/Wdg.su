@@ -1,1 +1,3 @@
-../Source/BSW/Sys/Wdg/Core/Wdg.c:16:6:Wdg_Reset	0	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:31:6:Wdg_Task	8	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:84:6:Wdg_Reset	0	static
+../Source/BSW/Sys/Wdg/Core/Wdg.c:99:6:Wdg_SelfCheck	12	static

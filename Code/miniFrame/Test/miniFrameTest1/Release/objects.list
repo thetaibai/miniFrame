@@ -24,4 +24,5 @@
 "./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
 "./Source/BSW/Sys/LittleOs/Config/Task.o"
 "./Source/BSW/Sys/LittleOs/Core/OS.o"
+"./Source/BSW/Sys/Wdg/Config/Wdg_Cfg.o"
 "./Source/BSW/Sys/Wdg/Core/Wdg.o"

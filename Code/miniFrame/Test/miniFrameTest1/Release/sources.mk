@@ -10,6 +10,7 @@ C_SRCS :=
 S_UPPER_SRCS := 
 O_SRCS := 
 CYCLO_FILES := 
+OBJCOPY_HEX := 
 SIZE_OUTPUT := 
 OBJDUMP_LIST := 
 SU_FILES := 
@@ -27,5 +28,6 @@ Core/Startup \
 Drivers/STM32F1xx_HAL_Driver/Src \
 Source/BSW/Sys/LittleOs/Config \
 Source/BSW/Sys/LittleOs/Core \
+Source/BSW/Sys/Wdg/Config \
 Source/BSW/Sys/Wdg/Core \
 

@@ -46,7 +46,7 @@ MEMORY
 {
   RAM    (xrw)    : ORIGIN = 0x20000400,   LENGTH = 9K
   RAM_NOINIT    (rx)    : ORIGIN = 0x20000000,   LENGTH = 1K
-  FLASH    (rx)    : ORIGIN = 0x8001000,   LENGTH = 28K
+  FLASH    (rx)    : ORIGIN = 0x8002000,   LENGTH = 24K
 }
 
 /* Sections */
